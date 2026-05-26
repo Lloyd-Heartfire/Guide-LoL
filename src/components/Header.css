@@ -1,0 +1,82 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(5, 7, 15, 0.97);
+    border-bottom: 1px solid rgba(200, 155, 60, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.header_inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    height: 60px;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.header_logo-icon {
+    font-size: 24px;
+    color: #c89b3c;
+}
+
+.header_logo-title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    color: #c89b3c;
+}
+
+.header_patch-badge {
+    background: rgba(200, 155, 60, 0.15);
+    border: 1px solid rgba(200, 155, 60, 0.3);
+    border-radius: 10px;
+    padding: 1px 6px;
+    font-size: 8px;
+    color: rgba(200, 155, 60, 0.7);
+    letter-spacing: 0.05em;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    overflow-x: auto;
+    flex: 1;
+}
+
+.header_nav-btn {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: rgba(232, 217, 176, 0.45);
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    transition: all 0.15s;
+}
+
+.header_nav-btn:hover {
+    color: rgba(232, 217, 176, 0.8);
+    background: rgba(200, 155, 60, 0.05);
+}
+
+.header_nav-btn-active {
+    color: #c89b3c;
+    border-bottom-color: #c89b3c;
+    background: rgba(200, 155, 60, 0.08);
+}
