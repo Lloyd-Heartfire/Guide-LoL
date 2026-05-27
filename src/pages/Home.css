@@ -1,0 +1,112 @@
+.home_centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    gap: 16px;
+}
+
+.home_spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(200, 155, 60, 0.2);
+    border-top: 3px solid #c89b3c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.home_loading-text {
+    color: rgba(200, 155, 60, 0.6);
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+.home_error-text {
+    color: #cc4444;
+    font-size: 15px;
+}
+
+.home_hero {
+    margin-bottom: 24px;
+}
+
+.home_hero-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e8d9b0;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.home_hero-sub {
+    font-size: 12px;
+    color: rgba(232, 217, 176, 0.4);
+    letter-spacing: 0.05em;
+}
+
+.home_search {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(200, 155, 60, 0.3);
+    border-radius: 6px;
+    padding: 10px 16px;
+    color: #e8d9b0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.home_search:focus {
+    border-color: rgba(200, 155, 60, 0.6);
+}
+
+.home_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 10px;
+}
+
+.home_card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(200, 155, 60, 0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.home_card:hover {
+    border-color: #c89b3c;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(200, 155, 60, 0.35);
+}
+
+.home_thumb {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.home_champ-name {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    color: #e8d9b0;
+    line-height: 1.2;
+}
+
+.home_champ-role {
+    font-size: 9px;
+    color: rgba(200, 155, 60, 0.6);
+    letter-spacing: 0.08em;
+}
