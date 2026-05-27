@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GameDataProvider } from "./context/GameDataContext";
 import Header from "./components/Header";
 import Home from "./pages/Home.tsx";
-import Build from "./pages/Build";
+import Build from "./pages/Build.tsx";
 import './App.css';
 
 const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
