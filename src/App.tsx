@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { GameDataProvider } from "./context/GameDataContext";
 import Header from "./components/Header";
-import Home from "./pages/Home";
+import Home from "./pages/Home.tsx";
 // import Build from "./pages/Build";
 import './App.css';
 
@@ -31,3 +31,5 @@ export default function App() {
     </GameDataProvider>
   );
 }
+
+export default App
